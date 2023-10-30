@@ -1,0 +1,62 @@
+.newsletter {
+    position: relative;
+    background-color: #F0EFE9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 1;
+
+    .background-wavy-lines {
+        display: none;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+
+        @media(min-width: 472px) {
+            display: block;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+
+        @media(min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        h2 {
+            font-family: 'DM sans', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        form {
+
+            input {
+                margin-bottom: 20px;
+                padding: 18px 30px;
+                border-radius: 25px;
+                outline: none;
+                border: 1px solid #1919191a;
+
+                @media(min-width: 768px) {
+                    margin-right: 20px;
+                }
+            }
+
+            .btn-yellow {
+                position: relative;
+                z-index: 1;
+
+                @media(min-width: 1200px) {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

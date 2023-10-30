@@ -1,0 +1,14 @@
+.brand-images {
+    
+    .brands {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 90px;
+        padding-bottom: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

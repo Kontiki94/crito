@@ -1,0 +1,24 @@
+.wrapper-grid {
+    height: 70vh;
+    background-color: #f0efe9;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 120px;
+    }
+
+    .page {
+        font-size: 150px;
+    }
+}
+
+.btn-black {
+    margin-top: 50px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}

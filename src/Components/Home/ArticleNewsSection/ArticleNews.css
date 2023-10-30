@@ -1,0 +1,94 @@
+.articles-news .container {
+  margin-top: 100px;
+}
+.articles-news .container .top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .articles-news .container .top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    text-align: left;
+  }
+}
+.articles-news .container .top .section-title {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.articles-news .container .news {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .articles-news .container .news {
+    flex-direction: row;
+  }
+}
+.articles-news .container .news .article {
+  border-bottom: 1px solid #DAD9D3;
+  text-align: center;
+  text-decoration: none;
+  color: #191919;
+}
+@media (min-width: 1200px) {
+  .articles-news .container .news .article {
+    border: none;
+  }
+}
+.articles-news .container .news .article:hover {
+  transition: 0.3s;
+  transform: scale(0.97);
+}
+@media (min-width: 1200px) {
+  .articles-news .container .news .article {
+    text-align: left;
+  }
+}
+.articles-news .container .news .article h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.articles-news .container .news .article p {
+  margin-top: 20px;
+}
+.articles-news .container .news .article img {
+  max-width: 100%;
+}
+.articles-news .container .nav-dots {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.articles-news .container .nav-dots .chev {
+  padding-top: 20px;
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .articles-news .container .nav-dots .chev {
+    display: none;
+  }
+}
+.articles-news .container .nav-dots .page-dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  gap: 17px;
+  font-size: 10px;
+}
+.articles-news .container .nav-dots .page-dots div {
+  color: #191919;
+  opacity: 0.3;
+  text-decoration: none;
+}
+.articles-news .container .nav-dots .page-dots .dot-1 {
+  color: #191919;
+  opacity: 1;
+}/*# sourceMappingURL=ArticleNews.css.map */

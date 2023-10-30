@@ -1,0 +1,26 @@
+.showcase .container {
+  display: flex;
+  justify-content: center;
+}
+.showcase .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 105px;
+  margin-bottom: 95px;
+  gap: 30px;
+}
+.showcase .container .content .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.showcase .container .content .nav-links .links {
+  text-decoration: none;
+  color: #191919;
+}
+.showcase .container .content .nav-links .links.active {
+  font-weight: 700;
+}
+.showcase .container .content h1 {
+  font-size: 74px;
+}/*# sourceMappingURL=ContactShowcase.css.map */

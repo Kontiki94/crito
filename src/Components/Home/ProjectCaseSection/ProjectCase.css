@@ -1,0 +1,57 @@
+.project-and-case .container .section-title {
+  text-align: center;
+}
+.project-and-case .container .project-and-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases-grid .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+.project-and-case .container .project-and-cases-grid .project img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases-grid .project h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.project-and-case .container .project-and-cases-grid .project .readmore {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+}
+.project-and-case .container .project-and-cases-grid .project .readmore i {
+  margin-left: 3px;
+}
+.project-and-case .container .project-and-cases-grid .project:hover .readmore {
+  transition: 0.3s;
+  font-weight: 900;
+}
+.project-and-case .container .project-and-cases-grid .project:hover img {
+  transition: 0.3s;
+  transform: scale(0.98);
+}
+.project-and-case .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}/*# sourceMappingURL=ProjectCase.css.map */

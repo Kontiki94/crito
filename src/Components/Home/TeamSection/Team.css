@@ -1,0 +1,104 @@
+.meet-team {
+  background-color: #F0D082;
+}
+.meet-team .container .top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .top {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.meet-team .container .top .section-title {
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .top .section-title {
+    padding-bottom: 100px;
+  }
+}
+.meet-team .container .top .btn-yellow {
+  padding: 18px 40px;
+  border: 1px solid #191919;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .top .btn-yellow {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+.meet-team .container .team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .meet-team .container .team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .meet-team .container .team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.meet-team .container .team-members .member {
+  align-self: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .team-members .member {
+    text-align: start;
+  }
+}
+.meet-team .container .team-members .member img {
+  max-width: 100%;
+}
+.meet-team .container .team-members .member-info {
+  margin-top: 15px;
+}
+.meet-team .container .team-members .member-info h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.meet-team .container .nav-dots {
+  display: flex;
+  justify-content: space-around;
+}
+.meet-team .container .nav-dots .chev {
+  padding-top: 20px;
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .nav-dots .chev {
+    display: none;
+  }
+}
+.meet-team .container .nav-dots .page-dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  gap: 17px;
+  font-size: 10px;
+}
+.meet-team .container .nav-dots .page-dots div {
+  color: #191919;
+  opacity: 0.3;
+  text-decoration: none;
+}
+.meet-team .container .nav-dots .page-dots .dot-2 {
+  color: #191919;
+  opacity: 1;
+}/*# sourceMappingURL=Team.css.map */

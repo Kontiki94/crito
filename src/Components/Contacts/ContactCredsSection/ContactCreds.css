@@ -1,0 +1,39 @@
+.connect {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.connect .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .connect .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+.connect .container .information {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  padding-right: 25px;
+}
+.connect .container .information .icon {
+  font-size: 4rem;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+.connect .container .information .info-text {
+  padding: 50px 0px;
+}
+.connect .container .information .info-text p {
+  margin: 0px;
+}
+.connect .container .information .info-text h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=ContactCreds.css.map */

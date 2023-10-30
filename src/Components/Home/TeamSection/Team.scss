@@ -1,0 +1,116 @@
+.meet-team {
+    background-color: #F0D082;
+
+    .container {
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            @media(min-width: 1200px) {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .section-title {
+                padding-bottom: 50px;
+
+                @media (min-width: 1200px) {
+                    padding-bottom: 100px;
+                }
+            }
+
+            .btn-yellow {
+                padding: 18px 40px;
+                border: 1px solid #191919;
+                margin-bottom: 40px;
+
+                @media(min-width: 1200px) {
+                    margin-top: 15px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .team-members {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .member {
+                align-self: center;
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    text-align: start;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .member-info {
+                margin-top: 15px;
+
+                h3 {
+                    font-family: 'DM sans', sans-serif ;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .nav-dots {
+            display: flex;
+            justify-content: space-around;
+
+            .chev {
+                padding-top: 20px;
+                font-size: 20px;
+
+                @media(min-width: 1200px) {
+                    display: none;
+                }
+            }
+
+            .page-dots {
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+                padding-bottom: 60px;
+                gap: 17px;
+                font-size: 10px;
+                
+
+                
+                div {
+                    color: #191919;
+                    opacity: 0.3;
+                    text-decoration: none;
+
+                }
+                
+                    .dot-2 {
+                    color: #191919;
+                    opacity: 1;
+                }
+            } 
+        }
+    }
+}

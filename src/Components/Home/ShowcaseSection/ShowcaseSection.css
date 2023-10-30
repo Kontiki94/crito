@@ -1,0 +1,89 @@
+.showcase {
+  background-color: #f0efe9;
+  position: relative;
+}
+.showcase .penstroke-showcase {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+@media (min-width: 992px) {
+  .showcase .penstroke-showcase {
+    display: block;
+  }
+}
+.showcase .penstroke-showcase img {
+  max-width: 100%;
+}
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .contents {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .contents {
+    text-align: left;
+  }
+}
+.showcase .container .contents .btn-yellow {
+  position: relative;
+  z-index: 1;
+}
+.showcase .container .contents .btn-transparent {
+  position: relative;
+  z-index: 1;
+}
+.showcase .container .contents h1 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .showcase .container .contents h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .contents h1 {
+    font-size: 86px;
+  }
+}
+.showcase .container .contents p {
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .contents p {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.showcase .container .contents a {
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .showcase .container .contents a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+.showcase .container img {
+  display: none;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container img {
+    display: block;
+  }
+}/*# sourceMappingURL=ShowcaseSection.css.map */

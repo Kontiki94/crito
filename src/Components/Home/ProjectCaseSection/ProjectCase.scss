@@ -1,0 +1,73 @@
+.project-and-case {
+    
+    .container{
+        
+        .section-title{
+            text-align: center;
+        }
+
+        .project-and-cases-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .project {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
+                
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3 {
+                    font-family: 'DM sans', sans-serif ;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #DAD9D3;
+                }
+
+                .readmore {
+                    padding: 15px;
+                    display: block;
+                    text-align: right;
+                    text-decoration: none;
+                    font-family: 'inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #191919;
+
+                    i {
+                        margin-left: 3px;
+                    }
+                }
+
+                &:hover .readmore{
+                    // text-decoration: underline;
+                    transition: 0.3s;
+                    font-weight: 900;
+                }
+
+                &:hover img {
+                    transition: 0.3s;
+                    transform: scale(0.98);
+                }
+            }
+        }
+
+        .center-content {
+            margin-top: 50px;
+            margin-bottom: 90px;
+        }
+    }
+}

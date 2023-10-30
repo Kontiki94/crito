@@ -1,0 +1,102 @@
+.our-services {
+  background-color: #f0efe9;
+  position: relative;
+  margin-top: 120px;
+}
+.our-services .penstroke {
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+}
+.our-services .penstroke img {
+  width: auto;
+  max-width: 100%;
+}
+.our-services .container .section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .our-services .container .section-title {
+    text-align: left;
+    width: 40%;
+  }
+}
+.our-services .container .services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+@media (min-width: 768px) {
+  .our-services .container .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .our-services .container .services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.our-services .container .services h3 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.our-services .container .services .arrow {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.our-services .container .services .outer-box {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+@media (min-width: 1200px) {
+  .our-services .container .services .outer-box {
+    padding: 35px 35px;
+  }
+}
+.our-services .container .services .outer-box:hover {
+  background-color: #F9D783;
+}
+.our-services .container .services .outer-box:hover .arrow {
+  color: #ffffff;
+}
+.our-services .container .services .outer-box .link-box {
+  text-decoration: none;
+  color: #191919;
+}
+.our-services .container .services .outer-box .box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  position: relative;
+}
+.our-services .container .services .outer-box .box:hover {
+  background-color: #F9D783;
+}
+.our-services .container .services .outer-box .box:hover .arrow {
+  color: #ffffff;
+}
+.our-services .container .services .outer-box .box .border-top {
+  width: 15%;
+  height: 3px;
+  background: #191919;
+  margin-bottom: 40px;
+}
+.our-services .container .center-content .btn-transparent {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 112px;
+}
+.our-services .container .center-content .btn-transparent i {
+  padding-top: 5px;
+}/*# sourceMappingURL=OurServices.css.map */

@@ -1,0 +1,118 @@
+.our-services {
+    background-color: #f0efe9;
+    position: relative;
+    margin-top: 120px;
+
+    .penstroke {
+        position: absolute;
+        width: auto;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+    .container {
+        .section-title {
+            text-align: center;
+            padding-bottom: 50px;
+
+            @media(min-width: 1200px) {
+                text-align: left;
+                width: 40%;
+            }
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(min-width: 1200px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            h3 {
+                color: #191919;
+                font-family: 'DM sans', sans-serif ;
+                font-weight: 700;
+                font-size: 22px;
+            }
+            
+            .arrow {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 50px;
+                margin-top: 30px;
+                padding-bottom: 10px;
+            }
+
+            .outer-box {
+                background-color: #ffffff;
+                padding: 50px 40px;
+
+                @media (min-width: 1200px) {
+                    padding: 35px 35px;
+                }
+
+                &:hover {
+                    background-color: #F9D783;
+
+                    .arrow {
+                        color: #ffffff;
+                    }
+                }
+
+                .link-box {
+                    text-decoration: none;
+                    color: #191919;
+                }
+                
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 5px;
+                    position: relative;
+
+                    &:hover {
+                        background-color: #F9D783;
+
+                        .arrow {
+                            color: #ffffff;
+                        }
+                    }
+
+                    .border-top {
+                        width: 15%;
+                        height: 3px;
+                        background: #191919;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+
+        .center-content {
+
+            .btn-transparent {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                padding-left: 35px;
+                padding-right: 35px;
+                margin-bottom: 112px;
+
+                i {
+                        padding-top: 5px;
+                }
+            }
+        }
+    }
+}

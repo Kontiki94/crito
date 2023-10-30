@@ -1,0 +1,41 @@
+.connect {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .information {
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
+            padding-right: 25px;
+
+            .icon {
+                font-size: 4rem;
+                padding-right: 25px;
+                padding-top: 25px;
+            }
+
+            .info-text {
+                padding: 50px 0px;
+                p {
+                    margin: 0px;
+                }
+                h3 {
+                    font-family: 'DM sans', sans-serif ;
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

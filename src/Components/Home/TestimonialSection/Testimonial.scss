@@ -1,0 +1,140 @@
+.testimonial {
+    background-color: #F0D082;
+    padding: 10px;
+    padding-bottom: 50px;
+    
+
+    @media(min-width: 1200px) {
+        padding-bottom: 120px;
+    }
+
+    @media(min-width: 1520px) {
+        padding-bottom: 220px;
+    }
+
+    .container {
+        margin-top: 10px;
+        background-color: #ffffff;
+        padding-bottom: 50px;
+        
+        @media(min-width: 1520px) {
+            padding-bottom: 20px;
+            outline: 100px solid #ffffff;
+            margin-top: 100px;
+        }
+
+        .title {
+            text-align: center;
+
+            .section-title {
+                padding-bottom: 60px;
+                padding-top: 40px;
+
+                @media(min-width: 1520px) {
+                    margin-top: 12px;
+                    padding-top: 0px;
+                }
+            }
+        }
+
+        .client-rating {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+            }
+
+            @media(min-width: 1400px) {
+                gap: 90px;
+            }
+
+            .client-box {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 15px;
+                border: 1px solid #DAD9D3;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+                @media(min-width: 1200px) {
+                    flex-direction: column;
+                    border: none;
+                    justify-content: space-between;
+                }
+
+                .rating {
+                    display: flex;
+                    font-size: 10px;
+                    gap: 5px;
+                    color: #F94D1C;
+                }
+
+                .review {
+                    line-height: 2;
+                }
+
+                .client {
+                    display: flex;
+                    flex-direction: row;
+
+                    @media(min-width: 768px) {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+
+                        img {
+                            margin-right: 10px;
+
+                            @media(min-width: 992px) {
+                                margin-left: 20px;
+                            }
+
+                            @media (min-width: 1200px) {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+
+                    @media(min-width: 1200px) {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    
+                    .client-info {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        margin-left: 20px;
+
+                        @media(min-width: 768px) {
+                            margin-left: 0px;
+                        }
+
+                        @media(min-width: 1200px) {
+                            margin-left: 20px;
+                        }
+                        h3 {
+                            font-family: 'DM sans', sans-serif ;
+                            font-weight: 700;
+                            font-size: 22px;
+                        }
+
+                        p{
+                            color: #F94D1C;
+                        }
+                    }
+                }
+            }
+        }
+
+        .center-content {
+
+            .btn-black {
+                margin-top: 100px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

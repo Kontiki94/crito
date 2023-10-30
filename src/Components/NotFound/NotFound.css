@@ -1,0 +1,21 @@
+.wrapper-grid {
+  height: 70vh;
+  background-color: #f0efe9;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-grid p {
+  font-size: 120px;
+}
+.wrapper-grid .page {
+  font-size: 150px;
+}
+
+.btn-black {
+  margin-top: 50px;
+}
+.btn-black:hover {
+  background-color: transparent;
+}/*# sourceMappingURL=NotFound.css.map */

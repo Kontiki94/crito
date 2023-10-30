@@ -1,0 +1,41 @@
+.forms .container {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #f0efe9;
+  margin-bottom: 100px;
+}
+.forms .container form {
+  display: flex;
+  flex-direction: column;
+}
+.forms .container form .title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.forms .container form .title h2 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.forms .container form input {
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(25, 25, 25, 0.1019607843);
+  outline: none;
+}
+.forms .container form textarea {
+  border-radius: 30px;
+  padding: 15px 20px;
+  height: 150px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(25, 25, 25, 0.1019607843);
+  outline: none;
+  resize: none;
+}
+.forms .container form button {
+  margin-bottom: 100px;
+}/*# sourceMappingURL=ContactForm.css.map */
