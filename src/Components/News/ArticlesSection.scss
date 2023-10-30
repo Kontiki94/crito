@@ -1,0 +1,46 @@
+.articles-news {
+
+    .container {
+
+        .top {
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        .news {
+
+            img {
+                width: 400px;
+                height: 215px;
+            }
+
+            @media (min-width: 992px) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+
+.nav-pages {
+    .page-numbers {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 65px;
+        margin-bottom: 50px;
+    }
+
+    .page {
+        border: 1px solid #DAD9D3;
+        border-radius: 5px;
+        padding: 5px 13px;
+
+        &:hover {
+            background-color: #DAD9D3;
+        }
+    }
+}

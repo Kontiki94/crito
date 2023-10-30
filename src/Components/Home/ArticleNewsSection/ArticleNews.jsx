@@ -4,10 +4,11 @@ import ArticleNewsBox from './ArticleNewsBox';
 import digitalisation from '../../../assets/images/digitalisation.png';
 import chat_gtp from '../../../assets/images/chat-gtp.png';
 import css_guide from '../../../assets/images/css-guide.png';
+import Button from '../../Generics/Button';
 
 const ArticleNews = () => {
     const articles = [
-        {img:digitalisation, title:"Business", description:"How To Use Digitalization In The classNameroom", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img:digitalisation, title:"Business", description:"How To Use Digitalization In The Classroom", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
         {img:chat_gtp, title:"Business", description:"How To Implement Chat GPT In Your Projects", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
         {img:css_guide, title:"Business", description:"The Guide To Support Modern CSS Design", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
     ]
@@ -21,7 +22,7 @@ const ArticleNews = () => {
                         <h2>Get Every Single Article & News</h2>
                     </div>
                     <div className="center-content">
-                        <a href="#" className="btn-transparent">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></a>
+                        <Button type="transparent" title="Browse Articles" url="/news" />
                     </div>
                 </div>
                 <div className="news">

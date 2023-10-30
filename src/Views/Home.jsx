@@ -3,7 +3,7 @@ import AboutCompany from '../Components/Home/AboutCompanySection/AboutCompany';
 import ArticleNews from '../Components/Home/ArticleNewsSection/ArticleNews';
 import Brands from '../Components/Home/BrandSection/Brands';
 import Features from '../Components/Home/FeatureSection/Features';
-import NewsLetter from '../Components/Home/NewsLetterSection/NewsLetter';
+import NewsLetter from '../Components/Generics/NewsLetterSection/NewsLetter';
 import OurServices from '../Components/Home/OurServicesSection/OurServices';
 import ProjectCase from '../Components/Home/ProjectCaseSection/ProjectCase';
 import ShowcaseSection from '../Components/Home/ShowcaseSection/ShowcaseSection';
