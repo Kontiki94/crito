@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ArticleNewsBox = ({img, title, description, text,}) => {
+const ArticleNewsBox = ({img, title, description, text, id}) => {
     return (
-        <Link to="/news-details" className="article">
+        <Link to={`/news/${id}`} className="article">
             <img src={img} alt="" />
             <p>{title}</p>
             <h3>{description}</h3>

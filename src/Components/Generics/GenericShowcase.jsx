@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import {NavLink} from 'react-router-dom';
-import img_backgroundlines from '../../assets/images/background-lines.svg'
+import './GenericShowcase.css';
+import img_backgroundlines from '../../assets/images/background-lines.svg';
 
 const GenericShowcase = ({url, pageTitle, title}) => {
     return (
@@ -20,7 +21,7 @@ const GenericShowcase = ({url, pageTitle, title}) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default GenericShowcase
+export default GenericShowcase;

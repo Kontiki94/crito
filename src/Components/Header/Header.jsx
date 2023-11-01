@@ -17,7 +17,7 @@ const Header = () => {
     const contactMethods = [
         {icon:"fa-light fa-phone-volume", info:"+46 (8) 121 470 50"},
         {icon:"fa-light fa-envelope", info:"info@crito.com"},
-        {icon:"fa-sharp fa-light fa-location-dot", info:"Sveavägen 31, 111 34 STOCKHOLM"},
+        {icon:"fa-sharp fa-light fa-location-dot", info:"Sveavägen 31, 111 34 STOCKHOLM"}
     ]
 
 

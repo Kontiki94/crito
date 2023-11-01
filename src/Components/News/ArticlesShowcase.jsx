@@ -3,7 +3,7 @@ import GenericShowcase from '../Generics/GenericShowcase';
 
 const ArticlesShowcase = () => {
     const newsPages = [
-        {url:"/news",pageTitle:"News", title:"News & Articles"}
+        {url:"/news", pageTitle:"News", title:"News & Articles"}
     ]
     return (
         newsPages.map((page, index) =>(

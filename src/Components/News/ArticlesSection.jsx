@@ -3,9 +3,6 @@ import './ArticlesSection.css';
 import ArticleNewsBox from '../Home/ArticleNewsSection/ArticleNewsBox';
 
 const ArticlesSection = () => {
-    const pages = [
-        {url:"/news", title:"News"}
-    ]
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
@@ -23,7 +20,6 @@ const ArticlesSection = () => {
     }
 
     return (
-        
         <div className="articles-news">
             <div className="container">
                 <div className="top">
@@ -34,7 +30,7 @@ const ArticlesSection = () => {
                 <div className="news">
                     {
                         articles.map((article) => (
-                            <ArticleNewsBox key={article.id} title={article.category} description={article.title} text={article.content} img={article.imageUrl} />
+                            <ArticleNewsBox key={article.id} id={article.id} title={article.category} description={article.title} text={article.content} img={article.imageUrl} />
                         ))
                     }
                 </div>

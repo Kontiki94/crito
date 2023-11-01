@@ -101,4 +101,8 @@ html, body {
   font-family: "DM sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
-}/*# sourceMappingURL=app.css.map */
+}
+
+.color {
+  background-color: #f0efe9;
+}/*# sourceMappingURL=App.css.map */

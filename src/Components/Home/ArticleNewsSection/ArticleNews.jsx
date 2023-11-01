@@ -1,34 +1,43 @@
 import React from 'react';
 import './ArticleNews.css';
+import { useState, useEffect } from 'react';
 import ArticleNewsBox from './ArticleNewsBox';
 import digitalisation from '../../../assets/images/digitalisation.png';
 import chat_gtp from '../../../assets/images/chat-gtp.png';
 import css_guide from '../../../assets/images/css-guide.png';
 import Button from '../../Generics/Button';
+import SectionTitle from '../../Generics/SectionTitle';
 
 const ArticleNews = () => {
-    const articles = [
-        {img:digitalisation, title:"Business", description:"How To Use Digitalization In The Classroom", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
-        {img:chat_gtp, title:"Business", description:"How To Implement Chat GPT In Your Projects", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
-        {img:css_guide, title:"Business", description:"The Guide To Support Modern CSS Design", text:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
-    ]
+    const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        getArticles();
+    }, [])
+
+    const getArticles = async () => {
+        try {
+            const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles?take=3');
+            setArticles(await result.json());
+        }
+        catch {
+            console.error('Could not fetch article');
+        }
+    }
 
     return (
         <div className="articles-news">
             <div className="container">
                 <div className="top">
-                    <div className="section-title">
-                        <p>Articles & News</p>
-                        <h2>Get Every Single Article & News</h2>
-                    </div>
+                        <SectionTitle title="Articles & News" description="Get Every Single Article & News" />
                     <div className="center-content">
                         <Button type="transparent" title="Browse Articles" url="/news" />
                     </div>
                 </div>
                 <div className="news">
                     {
-                        articles.map((article, index) => (
-                            <ArticleNewsBox key={index} img={article.img} title={article.title} description={article.description} text={article.text} />
+                        articles.map((article) => (
+                            <ArticleNewsBox key={article.id} id={article.id} title={article.category} description={article.title} text={article.content} img={article.imageUrl} />
                         ))
                     }
                 </div>

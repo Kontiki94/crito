@@ -1,4 +1,11 @@
 .showcase {
+    h1 {
+        color: #191919;
+        font-family: 'DM sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+
     .container {
         display: flex;
         justify-content: center;
@@ -14,6 +21,7 @@
             .nav-links {
                 display: flex;
                 gap: 15px;
+
                 .links {
                     text-decoration: none;
                     color: #191919;
@@ -30,3 +38,4 @@
         }
     }
 }
+
