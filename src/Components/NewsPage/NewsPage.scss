@@ -6,12 +6,19 @@
 
     .container {
         display: flex;
-        gap: 100px;
+        flex-direction: column;
+
+        @media(min-width: 1200px) {
+            gap: 100px;
+            flex-direction: row;
+        }
 
     }
 
     .left-side {
-        max-width: 60%;
+        @media(min-width: 1200px){
+            max-width: 60%;
+        }
 
         .title {
             h1 {
@@ -39,11 +46,11 @@
                 display: flex;
                 gap: 30px;
                 padding-bottom: 20px;
-                
+
                 p {
                     font-size: 75px;
                 }
-                
+
                 h2 {
                     line-height: 2;
                     font-size: 22px;
@@ -54,8 +61,15 @@
 
         .buttons {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 10px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 50px;
+
+            @media(min-width: 1200px) {
+                flex-direction: row;
+            }
 
             .btn {
                 background-color: #f0efe9;
@@ -80,9 +94,12 @@
     }
 
     .right-side {
-        margin-top: 275px;
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
+        @media(min-width: 1200px) {
+            margin-top: 275px;
+        }
 
         input {
             background-color: #f0e9ea;

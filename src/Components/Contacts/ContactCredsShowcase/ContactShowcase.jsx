@@ -1,5 +1,4 @@
 import React from 'react';
-import './ContactShowcase.css';
 import GenericShowcase from '../../Generics/GenericShowcase';
 
 const ContactShowcase = () => {
