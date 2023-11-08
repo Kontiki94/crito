@@ -5,9 +5,18 @@
         background-color: #f0efe9;
         margin-bottom: 100px;
 
+        .input-error {
+            border: 1px solid red;
+        }
+        .error {
+            color: red;
+            margin-left: 15px;
+        }
+
         form {
             display: flex;
             flex-direction: column;
+
             .title {
                 text-align: center;
                 margin-top: 100px;
@@ -15,7 +24,7 @@
 
                 h2 {
                     color: #191919;
-                    font-family: 'DM sans', sans-serif ;
+                    font-family: 'DM sans', sans-serif;
                     font-weight: 700;
                     font-size: 45px;
                 }
@@ -34,7 +43,7 @@
                 border-radius: 30px;
                 padding: 15px 20px;
                 height: 150px;
-                margin-bottom: 50px;
+                margin-bottom: 15px;
                 border: 1px solid #1919191a;
                 outline: none;
                 resize: none;
@@ -42,6 +51,11 @@
 
             button {
                 margin-bottom: 100px;
+                margin-top: 50px;
+
+                &:disabled {
+                    opacity: 0.3;
+                }
             }
         }
     }

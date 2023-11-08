@@ -4,6 +4,13 @@
   background-color: #f0efe9;
   margin-bottom: 100px;
 }
+.forms .container .input-error {
+  border: 1px solid red;
+}
+.forms .container .error {
+  color: red;
+  margin-left: 15px;
+}
 .forms .container form {
   display: flex;
   flex-direction: column;
@@ -31,11 +38,15 @@
   border-radius: 30px;
   padding: 15px 20px;
   height: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   border: 1px solid rgba(25, 25, 25, 0.1019607843);
   outline: none;
   resize: none;
 }
 .forms .container form button {
   margin-bottom: 100px;
+  margin-top: 50px;
+}
+.forms .container form button:disabled {
+  opacity: 0.3;
 }/*# sourceMappingURL=ContactForm.css.map */

@@ -1,23 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './ArticlesSection.css';
 import ArticleNewsBox from '../Home/ArticleNewsSection/ArticleNewsBox';
+import { useArticles } from '../../Contexts/ArticleContext';
 
 const ArticlesSection = () => {
-    const [articles, setArticles] = useState([]);
+    const { articles, getArticles } = useArticles();
+    
 
     useEffect(() => {
         getArticles();
     }, [])
-
-    const getArticles = async () => {
-        try {
-            const result = await fetch('https://win23-assignment.azurewebsites.net/api/articles');
-            setArticles(await result.json());
-        }
-        catch {
-            console.error('Could not fetch article');
-        }
-    }
 
     return (
         <div className="articles-news">
