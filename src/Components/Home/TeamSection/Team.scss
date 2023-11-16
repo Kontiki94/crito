@@ -51,7 +51,7 @@
                 flex-direction: row;
                 justify-content: space-between;
             }
-            
+
             .member {
                 align-self: center;
                 text-align: center;
@@ -69,7 +69,7 @@
                 margin-top: 15px;
 
                 h3 {
-                    font-family: 'DM sans', sans-serif ;
+                    font-family: 'DM sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
                 }
@@ -96,21 +96,19 @@
                 padding-bottom: 60px;
                 gap: 17px;
                 font-size: 10px;
-                
 
-                
                 div {
                     color: #191919;
                     opacity: 0.3;
                     text-decoration: none;
 
                 }
-                
-                    .dot-2 {
+
+                .dot-2 {
                     color: #191919;
                     opacity: 1;
                 }
-            } 
+            }
         }
     }
 }

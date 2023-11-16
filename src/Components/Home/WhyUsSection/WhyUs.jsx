@@ -6,10 +6,10 @@ import SectionTitle from '../../Generics/SectionTitle';
 
 const WhyUs = () => {
     const skills = [
-        {icon:"fa-light fa-thumbs-up", title:"Process Excellence", text:"Lorem, ipsum dolor sit amet consectetur."},
-        {icon:"fa-solid fa-brain", title:"Strategic Planning", text:"Lorem, ipsum dolor sit amet consectetur."},
-        {icon:"fa-light fa-pen-nib", title:"Experience Design", text:"Lorem, ipsum dolor sit amet consectetur."},
-        {icon:"fa-regular fa-head-side-gear", title:"Artifical Intelligence", text:"Lorem, ipsum dolor sit amet consectetur."},
+        { icon: "fa-light fa-thumbs-up", title: "Process Excellence", text: "Lorem, ipsum dolor sit amet consectetur." },
+        { icon: "fa-solid fa-brain", title: "Strategic Planning", text: "Lorem, ipsum dolor sit amet consectetur." },
+        { icon: "fa-light fa-pen-nib", title: "Experience Design", text: "Lorem, ipsum dolor sit amet consectetur." },
+        { icon: "fa-regular fa-head-side-gear", title: "Artifical Intelligence", text: "Lorem, ipsum dolor sit amet consectetur." },
     ]
 
     return (

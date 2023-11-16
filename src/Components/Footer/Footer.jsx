@@ -11,46 +11,46 @@ const Footer = () => {
     const footerLinks = [
         {
             title: "Company",
-            links: 
-            [
-                {text: "About", url:"/"},
-                {text: "Features", url:"/"},
-                {text: "Works", url:"/"},
-                {text: "Career", url:"/"},
-            ]
+            links:
+                [
+                    { text: "About", url: "/" },
+                    { text: "Features", url: "/" },
+                    { text: "Works", url: "/" },
+                    { text: "Career", url: "/" },
+                ]
         },
         {
             title: "Help",
-            links: 
-            [
-                {text: "Customer Support", url:"/"},
-                {text: "Delivery Details", url:"/"},
-                {text: "Terms & Conditions", url:"/"},
-                {text: "Privacy Policy", url:"/"},
-            ]
+            links:
+                [
+                    { text: "Customer Support", url: "/" },
+                    { text: "Delivery Details", url: "/" },
+                    { text: "Terms & Conditions", url: "/" },
+                    { text: "Privacy Policy", url: "/" },
+                ]
         },
         {
             title: "Resources",
-            links: 
-            [
-                {text: "Free eBooks", url:"/"},
-                {text: "Development Tutorial", url:"/"},
-                {text: "How to - Blog", url:"/"},
-                {text: "Youtube Playlist", url:"/"},
-            ]
+            links:
+                [
+                    { text: "Free eBooks", url: "/" },
+                    { text: "Development Tutorial", url: "/" },
+                    { text: "How to - Blog", url: "/" },
+                    { text: "Youtube Playlist", url: "/" },
+                ]
         },
         {
             title: "Link",
-            links: 
-            [
-                {text: "Free eBooks", url:"/"},
-                {text: "Development Tutorial", url:"/"},
-                {text: "How to - Blog", url:"/"},
-                {text: "Youtube Playlist", url:"/"},
-            ]
+            links:
+                [
+                    { text: "Free eBooks", url: "/" },
+                    { text: "Development Tutorial", url: "/" },
+                    { text: "How to - Blog", url: "/" },
+                    { text: "Youtube Playlist", url: "/" },
+                ]
         }
-    ]
-    
+    ];
+
     return (
         <footer>
             <div className="footer-section">
@@ -66,14 +66,13 @@ const Footer = () => {
                     </div>
                     <div className="info">
                         {
-                            footerLinks.map((link, index) =>(
+                            footerLinks.map((link, index) => (
                                 <FooterLinks key={index} title={link.title} links={link.links} />
                             ))
                         }
                     </div>
                 </div>
             </div>
-
             <div className="rights-socmedia">
                 <div className="container">
                     <div className="rights">
@@ -83,7 +82,7 @@ const Footer = () => {
                         {
                             socialMedias.map((media, index) => (
                                 <SocialMediaIcons key={index} url={media.url} icon={media.icon} target="_blank" />
-                             ))
+                            ))
                         }
                     </div>
                 </div>

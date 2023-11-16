@@ -28,7 +28,7 @@ const AboutCompany = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
                 </div>
                 <div className="buttons">
-                    <Button href="/about-company" title="Learn More" />
+                    <Button url="/learn-more" title="Learn More" />
                     <a href="#" className="intro-video"><i className="fa-thin fa-circle-play"></i> <span> Intro Video</span></a>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './GenericShowcase.css';
 import img_backgroundlines from '../../assets/images/background-lines.svg';
 
-const GenericShowcase = ({url, pageTitle, title}) => {
+const GenericShowcase = ({ url, pageTitle, title }) => {
     return (
         <div className="showcase">
             <div className="penstroke-showcase">

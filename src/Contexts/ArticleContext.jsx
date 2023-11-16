@@ -7,12 +7,12 @@ export const ArticleProvider = ({ children }) => {
     const apiUrl = 'https://win23-assignment.azurewebsites.net/api/articles';
     const [article, setArticle] = useState(null);
     const [articles, setArticles] = useState([]);
-    const [threeArticles, setThreeArticles] = useState([]);
+    const [multipleArticles, setMultipleArticles] = useState([]);
 
     useEffect(() => {
         getArticle();
         getArticles();
-        getThreeArticles();
+        getMultipleArticles();
     }, [])
 
     const getArticle = async (id) => {
@@ -35,12 +35,11 @@ export const ArticleProvider = ({ children }) => {
         }
     }
 
-    //limit för att vara dynamisk, t.ex om take ska vara 6, 9 etc
-    const getThreeArticles = async (limit) => {
+    const getMultipleArticles = async (limit) => {
         try {
             if (limit) {
                 let result = await fetch(`${apiUrl}?take=${limit}`);
-                setThreeArticles(await result.json());
+                setMultipleArticles(await result.json());
             }
         }
         catch {
@@ -49,9 +48,8 @@ export const ArticleProvider = ({ children }) => {
     }
 
     return (
-        <ArticleContext.Provider value={{ article, articles, threeArticles, getArticle, getArticles, getThreeArticles }}>
+        <ArticleContext.Provider value={{ article, articles, multipleArticles, getArticle, getArticles, getMultipleArticles }}>
             {children}
         </ArticleContext.Provider>
     )
 }
-

@@ -14,24 +14,37 @@
                 justify-content: space-between;
                 align-content: center;
                 text-align: left;
-                
+
             }
 
             .section-title {
-                padding-bottom: 30px;
                 padding-top: 50px;
             }
-
         }
 
         .news {
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-            justify-content: center;
+            padding: 5px;
 
             @media(min-width: 1200px) {
                 flex-direction: row;
+            }
+
+            .text-holder {
+                margin-left: 10px;
+            }
+
+            .img-holder {
+                position: relative;
+                max-width: 400px;
+                margin: 0 auto;
+
+                .banner {
+                    position: absolute;
+                    background-color: #F9D783;
+                    padding: 10px;
+                    top: 25px;
+                    left: 15px;
+                }
             }
 
             .article {
@@ -39,6 +52,7 @@
                 text-align: center;
                 text-decoration: none;
                 color: #191919;
+                overflow: hidden;
 
                 @media(min-width: 1200px) {
                     border: none;
@@ -48,14 +62,14 @@
                     transition: 0.3s;
                     transform: scale(0.97);
                 }
-                
+
 
                 @media (min-width: 1200px) {
                     text-align: left;
                 }
 
                 h3 {
-                    font-family: 'DM sans', sans-serif ;
+                    font-family: 'DM sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
                 }
@@ -68,44 +82,6 @@
                     max-width: 100%;
                 }
             }
-        }
-
-        .nav-dots {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-
-            .chev {
-                padding-top: 20px;
-                font-size: 20px;
-
-                @media(min-width: 1200px) {
-                    display: none;
-                }
-            }
-
-            .page-dots {
-                display: flex;
-                justify-content: center;
-                padding-top: 30px;
-                padding-bottom: 60px;
-                gap: 17px;
-                font-size: 10px;
-                
-
-                
-                div {
-                    color: #191919;
-                    opacity: 0.3;
-                    text-decoration: none;
-
-                }
-                
-                    .dot-1 {
-                    color: #191919;
-                    opacity: 1;
-                }
-            } 
         }
     }
 }

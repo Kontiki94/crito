@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionTitle = ({title, description}) => {
+const SectionTitle = ({ title, description }) => {
     return (
         <div className="section-title">
             <p>{title}</p>

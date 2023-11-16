@@ -1,6 +1,9 @@
 import React from 'react';
+import { successBox } from '../../Contacts/ContactsForms/ContactForm';
 import background_lines from '../../../assets/images/background-wavy-lines.svg';
 import './NewsLetter.css';
+import 'react-toastify/dist/ReactToastify.css';
+import Button from '../Button';
 
 const NewsLetter = () => {
     return (
@@ -10,7 +13,7 @@ const NewsLetter = () => {
                 <h2>Get News Updates By Signup</h2>
                 <form>
                     <input type="text" placeholder="username@domain.com" />
-                    <button className="btn-yellow">Subscribe <i className="fa-regular fa-arrow-up-right"></i></button>
+                    <Button type="yellow" title="Subscribe"/>
                 </form>
             </div>
         </div>

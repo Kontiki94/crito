@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Button = ({type, url, title}) => {
+const Button = ({ type, url, title }) => {
 
-    function getButtonClassName () {
-        switch(type) {
+    function getButtonClassName() {
+        switch (type) {
             case 'yellow':
                 return 'btn-yellow';
             case 'transparent':

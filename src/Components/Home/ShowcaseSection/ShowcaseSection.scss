@@ -4,17 +4,20 @@
 
     .penstroke-showcase {
         display: none;
-        @media (min-width: 992px){
+
+        @media (min-width: 992px) {
             display: block;
         }
+
         position: absolute;
         bottom: 0;
-        
+
         img {
             max-width: 100%;
         }
 
     }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -40,7 +43,7 @@
             }
 
             h1 {
-                font-family: 'DM sans', sans-serif ;
+                font-family: 'DM sans', sans-serif;
                 font-weight: 700;
                 font-size: 40px;
 
@@ -60,7 +63,7 @@
                 padding-left: 10px;
                 padding-right: 10px;
 
-                
+
                 @media (min-width: 768px) {
                     font-size: 20px;
                     padding-left: 0px;

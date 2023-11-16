@@ -1,0 +1,29 @@
+.nav-menu {
+  position: fixed;
+  z-index: 10;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+  border: 2px solid #DAD9D3;
+  color: white;
+  padding: 20px;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  opacity: 0.98;
+}
+.nav-menu .menu-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.nav-menu .menu-links a {
+  color: #191919;
+  text-decoration: none;
+  padding: 21px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.nav-menu .menu-links .active {
+  background-color: #DAD9D3;
+}/*# sourceMappingURL=MobileNav.css.map */

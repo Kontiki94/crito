@@ -1,6 +1,7 @@
 .connect {
     padding-top: 120px;
     padding-bottom: 120px;
+
     .container {
         display: flex;
         flex-direction: column;
@@ -11,7 +12,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
         }
-        
+
         .information {
             display: flex;
             justify-content: center;
@@ -26,11 +27,13 @@
 
             .info-text {
                 padding: 50px 0px;
+
                 p {
                     margin: 0px;
                 }
+
                 h3 {
-                    font-family: 'DM sans', sans-serif ;
+                    font-family: 'DM sans', sans-serif;
                     font-weight: 700;
                     font-size: 22px;
                     margin-bottom: 15px;

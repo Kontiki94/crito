@@ -8,13 +8,6 @@ html, body {
   line-height: 1.5;
 }
 
-.wrapper {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-
 .btn-yellow {
   background-color: #F9D783;
   transition: background-color 0.2s ease-in-out;

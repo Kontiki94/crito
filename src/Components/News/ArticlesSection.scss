@@ -1,7 +1,8 @@
 .articles-news {
 
     .container {
-
+        margin-top: 10px;
+        
         .top {
             @media (min-width: 992px) {
                 margin-bottom: 0px;
@@ -9,22 +10,29 @@
         }
 
         .news {
-
             img {
-                width: 400px;
+                width: 422px;
                 height: 215px;
             }
 
             @media (min-width: 992px) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            @media(min-width: 992px) {
+                &.carousel {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
 }
 
-
 .nav-pages {
+
     .page-numbers {
         display: flex;
         justify-content: center;

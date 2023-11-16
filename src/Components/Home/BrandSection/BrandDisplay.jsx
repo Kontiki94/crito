@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import './Brands.css';
 
-const BrandDisplay = ({src, alt}) => {
+const BrandDisplay = ({ src, alt }) => {
     return (
-            <img src={src} alt={alt} />
-    )
+        <img src={src} alt={alt} />
+    );
 }
 
-export default BrandDisplay
+export default BrandDisplay;

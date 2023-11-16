@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './ArticlesSection.css';
 import ArticleNewsBox from '../Home/ArticleNewsSection/ArticleNewsBox';
 import { useArticles } from '../../Contexts/ArticleContext';
 
 const ArticlesSection = () => {
     const { articles, getArticles } = useArticles();
-    
+
 
     useEffect(() => {
         getArticles();
@@ -22,7 +22,7 @@ const ArticlesSection = () => {
                 <div className="news">
                     {
                         articles.map((article) => (
-                            <ArticleNewsBox key={article.id} id={article.id} title={article.category} description={article.title} text={article.content} img={article.imageUrl} />
+                            <ArticleNewsBox key={article.id} id={article.id} published={article.published} title={article.category} description={article.title} text={article.content} img={article.imageUrl} />
                         ))
                     }
                 </div>

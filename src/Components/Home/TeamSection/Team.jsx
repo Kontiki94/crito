@@ -21,7 +21,7 @@ const Team = () => {
             <div className="container">
                 <div className="top">
                     <SectionTitle title="Meet Our Team" description="Experience Team Members" />
-                    <Button type="yellow" title="Browse Team" />
+                    <Button url="/browse-team" type="yellow" title="Browse Team" />
                 </div>
                 <div className="team-members">
                     {

@@ -1,16 +1,26 @@
+.articles-news .container {
+  margin-top: 10px;
+}
 @media (min-width: 992px) {
   .articles-news .container .top {
     margin-bottom: 0px;
   }
 }
 .articles-news .container .news img {
-  width: 400px;
+  width: 422px;
   height: 215px;
 }
 @media (min-width: 992px) {
   .articles-news .container .news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .articles-news .container .news.carousel {
+    display: flex;
+    flex-direction: column;
   }
 }
 

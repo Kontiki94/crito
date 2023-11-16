@@ -2,7 +2,6 @@
     background-color: #F0D082;
     padding: 10px;
     padding-bottom: 50px;
-    
 
     @media(min-width: 1200px) {
         padding-bottom: 120px;
@@ -16,7 +15,7 @@
         margin-top: 10px;
         background-color: #ffffff;
         padding-bottom: 50px;
-        
+
         @media(min-width: 1520px) {
             padding-bottom: 20px;
             outline: 100px solid #ffffff;
@@ -57,7 +56,7 @@
                 border: 1px solid #DAD9D3;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                
+
                 @media(min-width: 1200px) {
                     flex-direction: column;
                     border: none;
@@ -100,7 +99,7 @@
                         display: flex;
                         flex-direction: row;
                     }
-                    
+
                     .client-info {
                         display: flex;
                         flex-direction: column;
@@ -114,13 +113,14 @@
                         @media(min-width: 1200px) {
                             margin-left: 20px;
                         }
+
                         h3 {
-                            font-family: 'DM sans', sans-serif ;
+                            font-family: 'DM sans', sans-serif;
                             font-weight: 700;
                             font-size: 22px;
                         }
 
-                        p{
+                        p {
                             color: #F94D1C;
                         }
                     }

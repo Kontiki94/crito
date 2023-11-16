@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeaderBox = ({icon, info}) => {
+const HeaderBox = ({ icon, info }) => {
     return (
         <div className="content-box">
             <i className={icon}></i>

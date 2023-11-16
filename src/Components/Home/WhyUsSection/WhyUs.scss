@@ -3,6 +3,7 @@
 
     .background-block {
         display: none;
+
         @media(min-width: 1200px) {
             display: inline-block;
             position: absolute;
@@ -14,12 +15,13 @@
             right: 0;
         }
     }
-    
+
     .container {
         position: relative;
 
         .right {
             display: none;
+
             @media(min-width: 1200px) {
                 display: inline-block;
                 position: absolute;
@@ -36,7 +38,7 @@
             .section-title {
                 padding-bottom: 10px;
                 text-align: center;
-                
+
                 @media (min-width: 1200px) {
                     max-width: 30%;
                     text-align: left;
@@ -44,36 +46,36 @@
                 }
             }
 
-        .strengths {
-            align-self: center;
+            .strengths {
+                align-self: center;
 
-            @media (min-width: 1200px) {
-                align-self: first baseline;
-            }
-
-            .info-text {
-                display: flex;
-                gap: 30px;
-                margin-top: 35px;
-
-                h3 {
-                    color: #191919;
-                    font-family: 'DM sans', sans-serif ;
-                    font-weight: 700;
-                    font-size: 22px;
+                @media (min-width: 1200px) {
+                    align-self: first baseline;
                 }
 
-                .icon {
+                .info-text {
+                    display: flex;
+                    gap: 30px;
+                    margin-top: 35px;
 
-                    i {
-                        border: 1px solid #DAD9D3;
-                        border-radius: 50%;
-                        font-size: 35px;
-                        padding: 10px;
+                    h3 {
+                        color: #191919;
+                        font-family: 'DM sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+
+                    .icon {
+
+                        i {
+                            border: 1px solid #DAD9D3;
+                            border-radius: 50%;
+                            font-size: 35px;
+                            padding: 10px;
+                        }
                     }
                 }
             }
-        }
         }
     }
 }

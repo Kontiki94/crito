@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const TeamBox = ({img, name, title}) => {
+const TeamBox = ({ img, name, title }) => {
     return (
         <div className="member">
             <img src={img} alt="" />
@@ -9,7 +9,7 @@ const TeamBox = ({img, name, title}) => {
                 <p>{title}</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default TeamBox
+export default TeamBox;

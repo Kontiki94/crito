@@ -1,14 +1,14 @@
 import React from 'react';
 
-const TestimonialBox = ({rating, review, img, name, title}) => {
+const TestimonialBox = ({ rating, review, img, name, title }) => {
     return (
         <div className="client-box">
             <div className="rating">
-            {
-                Array.from({length: rating}).map((_,index)=>(
-                <i key={index} className="fa-solid fa-star"></i>
-                ))
-            }
+                {
+                    Array.from({ length: rating }).map((_, index) => (
+                        <i key={index} className="fa-solid fa-star"></i>
+                    ))
+                }
             </div>
             <div className="review">
                 <p>{review}</p>

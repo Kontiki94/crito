@@ -5,14 +5,11 @@ import Button from '../../Generics/Button';
 import './ShowcaseSection.css';
 
 
-
-
-
 const ShowcaseSection = () => {
     return (
         <section className='showcase-section'>
             <div className="showcase">
-            <img className="penstroke-showcase" src={img_backgroundlines} alt="penstrokes" />
+                <img className="penstroke-showcase" src={img_backgroundlines} alt="penstrokes" />
                 <div className="container">
                     <div className="contents">
                         <h1>We Provide The Best Business Solutions</h1>

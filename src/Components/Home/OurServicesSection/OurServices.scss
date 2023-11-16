@@ -15,7 +15,9 @@
             max-width: 100%;
         }
     }
+
     .container {
+        
         .section-title {
             text-align: center;
             padding-bottom: 50px;
@@ -41,11 +43,11 @@
 
             h3 {
                 color: #191919;
-                font-family: 'DM sans', sans-serif ;
+                font-family: 'DM sans', sans-serif;
                 font-weight: 700;
                 font-size: 22px;
             }
-            
+
             .arrow {
                 display: flex;
                 justify-content: flex-end;
@@ -74,7 +76,7 @@
                     text-decoration: none;
                     color: #191919;
                 }
-                
+
                 .box {
                     display: flex;
                     flex-direction: column;
@@ -110,7 +112,7 @@
                 margin-bottom: 112px;
 
                 i {
-                        padding-top: 5px;
+                    padding-top: 5px;
                 }
             }
         }

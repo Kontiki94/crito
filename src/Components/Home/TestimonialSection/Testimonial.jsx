@@ -28,7 +28,7 @@ const Testimonial = () => {
                     }
                 </div>
                 <div className="center-content">
-                    <Button title="All Reviews" />
+                    <Button url="/reviews" title="All Reviews" />
                 </div>
             </div>
         </div>

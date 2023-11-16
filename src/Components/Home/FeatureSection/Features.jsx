@@ -6,11 +6,12 @@ import Button from '../../Generics/Button';
 
 const Features = () => {
     const features = [
-        {icon: "fa-light fa-handshake", title: "Business Advice", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-        {icon: "fa-light fa-lightbulb-on", title: "Startup Business", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-        {icon: "fa-solid fa-chart-mixed-up-circle-dollar", title: "Financial Advice", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-        {icon: "fa-light fa-folder-gear", title: "Risk Management", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." }
-    ]
+        { icon: "fa-light fa-handshake", title: "Business Advice", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+        { icon: "fa-light fa-lightbulb-on", title: "Startup Business", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+        { icon: "fa-solid fa-chart-mixed-up-circle-dollar", title: "Financial Advice", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+        { icon: "fa-light fa-folder-gear", title: "Risk Management", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit." }
+    ];
+    
     return (
         <div className="trust-us">
             <div className="container trust-us-box">
@@ -22,7 +23,7 @@ const Features = () => {
                     {
                         features.map((feature, index) => (
                             <FeaturesBox key={index} icon={feature.icon} title={feature.title} text={feature.text} />
-                            ))
+                        ))
                     }
                 </div>
             </div>

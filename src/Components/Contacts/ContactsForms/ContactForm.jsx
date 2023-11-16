@@ -4,13 +4,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css';
 
+
+
 const ContactForm = () => {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    const successBox = () => {
-        toast.success("Formulär skickat!")
-    }
+    
     const alertBox = () => {
         toast.error("Något gick fel!")
+    }
+    const successBox = () => {
+        toast.success("Formulär skickat!")
     }
 
     const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
@@ -49,7 +52,7 @@ const ContactForm = () => {
                 alertBox();
             }
         }
-    })
+    });
 
     return (
         <div className="forms">

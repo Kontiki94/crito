@@ -9,9 +9,16 @@
   justify-content: space-between;
 }
 .nav-section .container .menu-bars {
+  position: fixed;
+  right: 0;
+  margin-right: 20px;
   font-size: 25px;
   border: none;
   background-color: transparent;
+  z-index: 100;
+}
+.nav-section .container .menu-bars button {
+  position: sticky;
 }
 @media (min-width: 992px) {
   .nav-section .container .menu-bars {

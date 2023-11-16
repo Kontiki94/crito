@@ -10,10 +10,10 @@ import Button from '../../Generics/Button';
 
 const ProjectCase = () => {
     const articles = [
-        { img: man_newspaper, alt: "Man holding newspaper", title: "Grow your business", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/" },
-        { img: tablet_smartwatch, alt: "Apple tablet and smartwatch", title: "Why your client needs a responsive website", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/" },
-        { img: office_supplies, alt: "Office supplies", title: "Educate your employees to get better results", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/" },
-        { img: laptop, alt: "Laptop on a desk with business program", title: "Business insights is an important piece of your business", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/" }
+        { img: man_newspaper, alt: "Man holding newspaper", title: "Grow your business", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/grow-business" },
+        { img: tablet_smartwatch, alt: "Apple tablet and smartwatch", title: "Why your client needs a responsive website", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/responsive" },
+        { img: office_supplies, alt: "Office supplies", title: "Educate your employees to get better results", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/educate" },
+        { img: laptop, alt: "Laptop on a desk with business program", title: "Business insights is an important piece of your business", description: "Read more", icon: "fa-regular fa-arrow-up-right", url: "/business-insights" }
     ]
 
     return (
@@ -28,7 +28,7 @@ const ProjectCase = () => {
                     }
                 </div>
                 <div className="center-content">
-                    <Button title="All recent projects" />
+                    <Button url="/recent-projects" title="All recent projects" />
                 </div>
             </div>
         </div>
