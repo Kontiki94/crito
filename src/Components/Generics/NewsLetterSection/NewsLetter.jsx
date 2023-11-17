@@ -1,5 +1,4 @@
 import React from 'react';
-import { successBox } from '../../Contacts/ContactsForms/ContactForm';
 import background_lines from '../../../assets/images/background-wavy-lines.svg';
 import './NewsLetter.css';
 import 'react-toastify/dist/ReactToastify.css';
