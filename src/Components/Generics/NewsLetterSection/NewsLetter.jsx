@@ -1,7 +1,6 @@
 import React from 'react';
 import background_lines from '../../../assets/images/background-wavy-lines.svg';
 import './NewsLetter.css';
-import 'react-toastify/dist/ReactToastify.css';
 import Button from '../Button';
 
 const NewsLetter = () => {

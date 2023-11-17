@@ -2,7 +2,8 @@
 
     .container {
         margin-top: 10px;
-        
+        padding-bottom: 50px;
+
         .top {
             @media (min-width: 992px) {
                 margin-bottom: 0px;
@@ -10,6 +11,7 @@
         }
 
         .news {
+            
             img {
                 width: 422px;
                 height: 215px;

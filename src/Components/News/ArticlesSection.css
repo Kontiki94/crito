@@ -1,5 +1,6 @@
 .articles-news .container {
   margin-top: 10px;
+  padding-bottom: 50px;
 }
 @media (min-width: 992px) {
   .articles-news .container .top {
